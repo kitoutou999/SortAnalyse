@@ -1,0 +1,31 @@
+{
+  "GeneratorName" : [
+    "SecondGeneratorStrategy0.1",
+    "SecondGeneratorStrategy0.5", 
+    "SecondGeneratorStrategy1.0",
+    "RandomGeneratorStrategy",
+    "ReverseGeneratorStrategy",
+    "FirstHalfChunkGeneratorStrategy",
+    "FirstHalfReverseGeneratorStrategy",
+    "SecondHalfChunkGeneratorStrategy",
+    "SecondHalfReverseGeneratorStrategy"],
+
+
+  "Count" : [
+    1000,
+    10000
+  ],
+
+  "SortName" : [
+    "BubbleSort",
+    "CocktailShakerSort",
+    "GnomeSort",
+    "HeapSort",
+    "InsertionSort",
+    "MergeSort",
+    "QuickSort",
+    "RadixSort",
+    "SelectionSort",
+    "ShellSort"
+  ]
+}

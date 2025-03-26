@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- En-tête du document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StatsAnalyse</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/compare.css">
+    <link rel="stylesheet" href="../resources/css/graph-function.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link type="image/png" sizes="32x32" rel="icon" href="../resources/icon/favicon.png">
+</head>
+<body>
+    <!-- Contenu principal -->
+    <div class="container">
+        <!-- Barre latérale -->
+        <nav class="sidebar">
+            <h1 class="title-sidebar">Analyser</h1>
+           
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-outlined">Dashboard</span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="generator.html" class="nav-link">
+                        <span class="material-symbols-outlined">query_stats</span>
+                        Generator
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="analyse.html" class="nav-link">
+                        <span class="material-symbols-outlined">nest_clock_farsight_analog</span>
+                        Analyse
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sorts.html" class="nav-link">
+                        <span class="material-symbols-outlined">sort</span>
+                        Algorithmes de tri
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">compare</span>
+                        Comparaison
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <!-- Contenu principal -->
+            <div class="topside">
+                <div class="card" id="card1">
+                    <div class="card-header">
+                        <h2 class="card-title">Grapheur de Fonction</h2>
+                        <div class="dropdownsligne"></div>
+                    </div>
+                    <div class="card-content">
+                        
+                        <div class="slider-container">
+                            <label for="target-slider">Valeur cible :</label>
+                            <div class="slider-with-value">
+                                <input type="range" id="target-slider" class="slider" min="0" max="1" step="0.05" value="0.6">
+                                <input type="number" id="target-input" class="input-numeric" min="0" max="1" step="0.05" value="0.6">
+                                <button id="update-button" class="button">Mettre à jour</button>
+                            </div>
+                        </div>
+                        
+                        <div class="graph-container">
+                            <canvas id="functionGraph"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card-header">
+                        <h2 class="card-title">Solutions & Valeurs</h2>
+                        <div class="dropdownsligne"></div>
+                    </div>
+                    <div class="card-content">
+
+                        <div id="no-solution-message" class="no-solution-message">
+                            Aucune solution trouvée pour cette valeur cible.
+                        </div>
+                        
+                        <div id="solutions-container">
+                            <div class="solution-card" id="solution-card-1">
+                                <div class="solution-title">Première solution :</div>
+                                <div>x = <span class="solution-value" id="solution1">0.1461024034</span></div>
+                            </div>
+                            
+                            <div class="solution-card" id="solution-card-2">
+                                <div class="solution-title">Deuxième solution :</div>
+                                <div>x = <span class="solution-value" id="solution2">0.8538975966</span></div>
+                            </div>
+                        </div>
+
+                        <div class="equation">
+                            -x(log<sub>2</sub>(x)-log<sub>2</sub>(1-x))-log<sub>2</sub>(1-x) = <span id="target-value">0.6</span>
+                        </div>
+                        
+                        <h3 class="values-title">Valeurs de la fonction</h3>
+                        <div class="table-container">
+                            <table class="function-values">
+                                <thead>
+                                    <tr>
+                                        <th>x</th>
+                                        <th>0.1</th>
+                                        <th>0.2</th>
+                                        <th>0.3</th>
+                                        <th>0.4</th>
+                                        <th>0.5</th>
+                                        <th>0.6</th>
+                                        <th>0.7</th>
+                                        <th>0.8</th>
+                                        <th>0.9</th>
+                                        <th>1</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="function-values-body">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-header">
+                    <h2 class="card-title">Comparaison</h2>
+                    <h1 style="font-size: medium;">10 000</h1>
+                </div>
+                <div class="Tabcontainer">
+                   
+                </div>
+            </div>
+           
+        </main>
+    </div>
+    <!-- Scripts -->
+    <script src="../model/compare/createTab.js"></script>
+    <script src="../controller/general/dropDown.js"></script>
+    <script src="../controller/compare/createTab.js"></script>
+    <script src="../controller/compare/CompeGene.js"></script>
+    <script src="../controller/compare/graph-function.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+  "history": {
+  "10":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 99,
+      "arrayAccess": 188298,
+      "comparaison": 188100,
+      "delay": 1
+    },
+  "20":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 198,
+      "arrayAccess": 356994,
+      "comparaison": 356598,
+      "delay": 1
+    },
+  "30":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 297,
+      "arrayAccess": 507492,
+      "comparaison": 506898,
+      "delay": 1
+    },
+  "40":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 396,
+      "arrayAccess": 636786,
+      "comparaison": 635994,
+      "delay": 1
+    },
+  "50":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 495,
+      "arrayAccess": 746478,
+      "comparaison": 745488,
+      "delay": 1
+    },
+  "60":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 594,
+      "arrayAccess": 837376,
+      "comparaison": 836188,
+      "delay": 1
+    },
+  "70":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 693,
+      "arrayAccess": 907666,
+      "comparaison": 906280,
+      "delay": 1
+    },
+  "80":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 792,
+      "arrayAccess": 958764,
+      "comparaison": 957180,
+      "delay": 1
+    },
+  "90":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 891,
+      "arrayAccess": 990070,
+      "comparaison": 988288,
+      "delay": 1
+    },
+  "100":  {
+      "correct": 1,
+      "set": 0,
+      "swap": 990,
+      "arrayAccess": 1000968,
+      "comparaison": 998988,
+      "delay": 1
+    }
+  },
+  "global": {
+    "algorithm": "SelectionSort",
+    "comparaisons": 999000,
+    "arrayAccess": 1000986,
+    "set": 0,
+    "swap": 993,
+    "delay": 1
+  }
+}

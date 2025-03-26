@@ -1,0 +1,26 @@
+[
+    {
+        "sorts":{
+            "Bubble":30,
+            "Cocktail":30,
+            "Gnome":30,
+            "Heap":30,
+            "Insert":30,
+            "Merge":30,
+            "Quick":30,
+            "Radix":30,
+            "Selection":30,
+            "Shell":30,
+            "Tim":30
+        },
+        "animations":[
+            "VBar",
+            "Points",
+            "Pyramid",
+            "Cardiogram"
+        ]
+    }, 
+    {
+        "Web":"Soon..."
+    }
+]
