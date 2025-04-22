@@ -68,5 +68,4 @@ La documentation détaillée est disponible dans le dossier `doc/`.
 ## Contribution
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
-## Licence
-Ce projet est sous licence [à définir]
+
